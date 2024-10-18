@@ -68,7 +68,7 @@
    /* -------- hero section styling -------- */
   .hero {
     text-align: center;
-    padding: 120px 0;
+    padding: 180px 0;
   }
 
   .hero-container {
@@ -79,7 +79,7 @@
 
   .hero h1 {
     font-family: 'Times New Roman', serif;
-    font-size: 80px;
+    font-size: 90px;
     color: #CCA56A;
   }
   
@@ -100,19 +100,19 @@
   }
 
   #icecream-almond {
-    top: 10px;
+    top: -10px;
     left: 42%;
     transform: rotate(-15deg); /* rotate slightly for a dynamic look */
   }
   
   #icecream-classic {
-    top: -100px;
+    top: -150px;
     left: 25%;
     transform: rotate(15deg); 
   }
   
   #icecream-white {
-    top: 300px;
+    top: 250px;
     right: 10%;
     transform: rotate(15deg); 
   }
@@ -126,14 +126,14 @@
   
   .slogan p {
     font-family: 'Times New Roman', serif;
-    font-size: 30px;
+    font-size: 40px;
     color: #CCA56A;
   }
 
   /* -------- indulgence section styling -------- */
   .indulgence {
     text-align: center;
-    padding: 50px 0;
+    padding: 300px 0;
   }
   
   .indulgence h2 {
