@@ -1,0 +1,28 @@
+* { /* resetting styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* -------- indulgence section styling -------- */
+  .indulgence {
+    text-align: center;
+    padding: 300px 0;
+  }
+  
+  .indulgence h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 60px;
+    color: #CCA56A;
+  }
+  
+  .indulgence ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .indulgence ul li {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #FCECCB;
+  }

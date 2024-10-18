@@ -1,0 +1,87 @@
+* { /* resetting styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ /* -------- hero section styling -------- */
+  .hero {
+    height: 100vh; /* full viewport height */
+    text-align: center;
+    padding: 160px 0;
+    position: relative;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .more-is-more {
+    display: flex;
+    flex-direction: column; /* stack elements vertically */
+    align-items: center; /* center horizontally */
+    margin-left: -500px;
+  }
+  
+  .more-is-more h1 {
+    margin: 0; /* remove margin for both headings */
+  }
+  
+  .hero h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 90px;
+    color: #CCA56A;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    color: #FCECCB;
+    margin: 10px 0;
+  }
+  
+  /* ice cream styling */ 
+  .ice-cream-images {
+    display: flex;
+    position: relative; /* make the container relatively positioned */
+    margin-top: -280px;
+  }
+  
+  .ice-cream {
+    max-height: 400px; /* adjusting size of the ice creams */
+    position: relative; /* allows you to use top, left, right, bottom */
+  }
+  
+  #icecream-almond {
+    top: -30px;
+    left: 42%;
+    transform: rotate(-15deg); /* rotate slightly for a dynamic look */
+  }
+  
+  #icecream-classic {
+    top: -180px;
+    left: 25%;
+    transform: rotate(15deg); 
+  }
+  
+  #icecream-white {
+    top: 220px;
+    right: 10%;
+    transform: rotate(15deg); 
+  }
+  
+  /* -------- slogan section styling -------- */
+  .slogan {
+    padding: 200px 0;
+    text-align: center;
+    background-color: #33160B;
+  }
+  
+  .slogan p {
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+    color: #CCA56A;
+  }  
