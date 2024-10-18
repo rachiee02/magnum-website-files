@@ -1,0 +1,154 @@
+* { /* resetting styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Jost', sans-serif;
+    background-image: url(images/30f7d22ca1fb54328512013d48015588.jpg);
+    background-repeat: no-repeat center center;
+    background-attachment: fixed;  
+    background-size: cover;
+    color: #fff;
+  }
+
+  /* -------- button styling -------- */ 
+  .button {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FCECCB;
+    color: #34160B;
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  /* -------- navigation bar styling -------- */
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  /* left and right navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* gap between each word */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    padding: 20px;
+  }
+  
+  /* center logo */
+  .logo {
+    flex-grow: 1; /* makes logo sit in the middle, taking up as much space as needed to balance the links on either side. */ 
+    text-align: center;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+   /* -------- hero section styling -------- */
+  .hero {
+    text-align: center;
+    padding: 120px 0;
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 80px;
+    color: #CCA56A;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    color: #FCECCB;
+  }
+  
+  /* ice cream styling */ 
+  .ice-cream-images {
+    display: flex;
+    position: relative; /* make the container relatively positioned */
+  }
+  
+  .ice-cream {
+    max-height: 400px; /* adjusting size of the ice creams */
+    position: relative; /* allows you to use top, left, right, bottom */
+  }
+
+  #icecream-almond {
+    top: 10px;
+    left: 42%;
+    transform: rotate(-15deg); /* rotate slightly for a dynamic look */
+  }
+  
+  #icecream-classic {
+    top: -100px;
+    left: 25%;
+    transform: rotate(15deg); 
+  }
+  
+  #icecream-white {
+    top: 300px;
+    right: 10%;
+    transform: rotate(15deg); 
+  }
+  
+  /* -------- slogan section styling -------- */
+  .slogan {
+    padding: 200px 0;
+    text-align: center;
+    background-color: #33160B;
+  }
+  
+  .slogan p {
+    font-family: 'Times New Roman', serif;
+    font-size: 30px;
+    color: #CCA56A;
+  }
+
+  /* -------- indulgence section styling -------- */
+  .indulgence {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .indulgence h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 60px;
+    color: #CCA56A;
+  }
+  
+  .indulgence ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .indulgence ul li {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #FCECCB;
+  }
