@@ -15,14 +15,53 @@
     font-size: 60px;
     color: #CCA56A;
   }
-  
-  .indulgence ul {
-    list-style: none;
-    margin-top: 20px;
+
+  .indulgence-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* ensures list and images are aligned at the top */
+    gap: 100px; /* adds space between list and images */
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
   
-  .indulgence ul li {
+  .flavours {
+    list-style: none;
+    margin-top: 20px;
+    text-align: left; /* aligns list items to the left */
+  }
+  
+  .flavours li {
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 30px;
     color: #FCECCB;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .flavours li:hover {
+    color: #CCA56A;
+  }
+
+  /* -------- images -------- */
+
+  .flavour-image {
+    width: 350px; /* set width for the image container */
+    height: 350px; /* set height for the image container to keep a consistent area */
+    position: relative;
+  }
+
+  .flavour-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .flavour-img.active { /* to target in javascript */
+    opacity: 1;
+    display: block;
   }

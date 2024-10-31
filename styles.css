@@ -26,6 +26,10 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #CCA56A;
+}
+
 /* -------- navigation bar styling -------- */
 header {
   padding: 20px;
