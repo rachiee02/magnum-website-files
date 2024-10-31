@@ -75,7 +75,7 @@
   
   /* -------- slogan section styling -------- */
   .slogan {
-    padding: 200px 0;
+    padding: 150px 0;
     text-align: center;
     background-color: #33160B;
   }
@@ -84,4 +84,17 @@
     font-family: 'Times New Roman', serif;
     font-size: 40px;
     color: #CCA56A;
+    margin-right: 150px;
   }  
+
+  #icecream-almond2 {
+    top: 350px;
+    left: 12%;
+    transform: rotate(-15deg); 
+  }
+  
+  #icecream-classic2 {
+    top: 200px;
+    left: -30%;
+    transform: rotate(15deg); 
+  }
