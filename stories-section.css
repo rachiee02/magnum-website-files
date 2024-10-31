@@ -1,0 +1,93 @@
+* { /* resetting styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------- magnum stories section styling -------- */
+.magnum-stories {
+  text-align: center;
+  padding: 150px;
+  background-color: #33160B;
+  color: #FCECCB;
+  overflow: hidden; /* hide overflow from carousel */
+}
+
+.magnum-stories h2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  position: relative;
+  cursor: pointer;
+  padding: 50px;
+  justify-content: center;
+}
+
+.story {
+  position: relative;
+  transform: rotate(-5deg); /* slight slant */
+  transition: transform 0.3s ease;
+}
+
+.story:hover {
+  transform: rotate(0); /* remove slant on hover */
+}
+
+.story img {
+  width: 300px; /* adjusting the size of the images */
+  height: 100%;
+  object-fit: cover; /* ensures images covers the entire container area */
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 10, 3, 0.6);
+  color: #f8e5c0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.story:hover .overlay {
+  opacity: 1; /* show overlay on hover */
+}
+
+
+/* -------- banner section styling -------- */
+.banner {
+  background:  #CCA56A;
+  padding: 30px;
+  color: #33160B;
+  font-family: 'Times New Roman', serif;
+  font-size: 50px;
+  overflow: hidden;
+}
+
+.banner-text {
+  position: relative;
+  left: 100vw;
+  white-space: nowrap;
+  animation: move 15s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  from {left: 100vw;}
+  to {left: -100vw;} /* maximum length */
+}
