@@ -13,7 +13,7 @@ body {
   color: #fff;
 }
 
-/* -------- button styling -------- */ 
+/* -------- button styling --------  */ 
 .button {
   display: inline-block;
   font-size: 14px;
@@ -68,7 +68,4 @@ nav ul li a {
 .logo img {
   max-height: 50px;
 }
-
-@import url(hero-section.css);
-@import url(indulgence-section.css);
 

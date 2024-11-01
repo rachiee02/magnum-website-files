@@ -7,10 +7,10 @@
 /* -------- magnum stories section styling -------- */
 .magnum-stories {
   text-align: center;
-  padding: 150px;
-  background-color: #33160B;
+  padding: 150px 0;
+  background-color: #452113;
   color: #FCECCB;
-  overflow: hidden; /* hide overflow from carousel */
+  overflow: hidden;
 }
 
 .magnum-stories h2 {
@@ -22,17 +22,21 @@
 .carousel {
   display: flex;
   gap: 20px;
+  width: 100vw; /* full viewport width */
+  overflow: hidden; /* hide overflow within the carousel */
+  padding: 50px 0; 
   scroll-behavior: smooth;
-  position: relative;
+  white-space: nowrap;
   cursor: pointer;
-  padding: 50px;
-  justify-content: center;
+  position: relative;
 }
 
 .story {
   position: relative;
   transform: rotate(-5deg); /* slight slant */
   transition: transform 0.3s ease;
+  width: 300px; /* adjusting the size of the images */
+  height: 330px;
 }
 
 .story:hover {
@@ -41,9 +45,9 @@
 
 .story img {
   width: 300px; /* adjusting the size of the images */
-  height: 100%;
-  object-fit: cover; /* ensures images covers the entire container area */
+  height: 330px;
   border-radius: 10px;
+  object-fit: cover; /* ensures images covers the entire container area */
 }
 
 .overlay {
@@ -61,7 +65,7 @@
   font-family: "Jost", sans-serif;
   font-size: 24px;
   transition: opacity 0.3s ease;
-  border-radius: 10px;
+  border-radius: 10px; /* matching with the image's border-radius */
 }
 
 .story:hover .overlay {

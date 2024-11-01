@@ -1,0 +1,131 @@
+* { /* resetting styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* -------- socials section styling -------- */
+  .socials-section {
+    padding: 150px 0;
+    background-color: #33160B;
+    color: #CCA56A;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px; /* adjusted font size */
+    display: flex;
+    justify-content: center; /* centers the content horizontally */
+    gap: 100px; /* spacing between Facebook/Instagram and TikTok sections */
+  }
+
+  .fb-ig,
+  .tiktok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fb-ig a,
+  .tiktok a {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* spacing between icon and text */
+    text-decoration: none;
+    color: #CCA56A;
+  }
+
+  .fb-ig img,
+  .tiktok img {
+    width: 30px; /* adjust icon size */
+    filter: brightness(0) saturate(100%) invert(90%) sepia(15%) saturate(628%) hue-rotate(343deg) brightness(92%) contrast(90%);  /* overriding the set colour */
+  }
+
+  .fb-ig p,
+  .tiktok p {
+    margin-top: 5px;
+    font-size: 24px;
+  }
+
+  /* -------- footer section styling -------- */
+  .footer {
+    padding: 50px 0;
+    background-color: #33160B;
+    color: #CCA56A;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+  }
+  
+  /* logo styling */
+  .footer .logo img {
+    margin-bottom: 50px;
+  }
+  
+  /* footer container */
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* reduce the gap between columns */
+    padding: 0 20px;
+  }
+  
+  /* links column styling */
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* align text to the left */
+  }
+  
+  .links h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #CCA56A; /* ensure the color is similar to the logo */
+  }
+  
+  .all-links,
+  .footer-socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .all-links a,
+  .footer-socials a {
+    color: #FCECCB;
+    text-decoration: none;
+  }
+  
+  .all-links li {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .all-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* social icons styling */
+  .footer-socials {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-socials img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(15%) saturate(628%) hue-rotate(343deg) brightness(92%) contrast(90%); /* overriding the set colour */
+  }
+  
+  /* bottom copyright section */
+  .footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .unilever-logo img {
+    width: 50px;
+    height: auto;
+  }
+  
