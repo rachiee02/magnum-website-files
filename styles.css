@@ -19,15 +19,20 @@ body {
   font-size: 14px;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #FCECCB;
-  color: #34160B;
+  background-color: #FCECCB; /* light background color */
+  color: #34160B; /* dark text color */
   text-decoration: none;
-  border-radius: 30px;
-  cursor: pointer;
+  border-radius: 30px; /* rounded corners */
+  cursor: pointer; /* pointer cursor on hover */
+  transition: all 0.3s ease; /* smooth transition for hover effects */
+  position: relative; /* make sure z-index works */
+  z-index: 10; /* bring button above other elements */
 }
 
 .button:hover {
-  background-color: #CCA56A;
+  background-color: #34160B; /* dark background on hover */
+  color: #FCECCB; /* light text color on hover */
+  transform: scale(1.2); /* scale the button up */
 }
 
 /* -------- navigation bar styling -------- */
@@ -59,6 +64,14 @@ nav ul li a {
   padding: 20px;
 }
 
+/* set up the initial transform for span */
+nav ul li a span {
+  display: inline-block;
+  transform-origin: center;
+  transform-style: preserve-3d; /* enables 3D transform */
+  transition: transform 0.5s ease; /* smooth animation */
+}
+
 /* center logo */
 .logo {
   flex-grow: 1; /* makes logo sit in the middle, taking up as much space as needed to balance the links on either side. */ 
@@ -69,3 +82,42 @@ nav ul li a {
   max-height: 50px;
 }
 
+/* mobile - screen width of 768px or less */
+@media (max-width: 768px) {
+  .header nav {
+      flex-direction: column;
+  }
+
+  .nav-left, .nav-right {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .hero {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .hero-container {
+      flex-direction: column;
+  }
+
+  .ice-cream-images {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-socials {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  }
+}
